@@ -1,96 +1,125 @@
-﻿using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Net.Sockets;
+using System.Reflection;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace WebServer
-
-  {
+{
     public static class Server
     {
         private static HttpListener listener;
+        private static Router router = new Router();
+        public static int maxSimultaneousConnections = 20;
+        private static Semaphore sem = new Semaphore(maxSimultaneousConnections, maxSimultaneousConnections);
 
-        /// <summary>
-        /// Returns list of IP addresses assigned to localhost network devices, such as hardwired ethernet, wireless, etc.
-        /// </summary>
         private static List<IPAddress> GetLocalHostIPs()
         {
-            IPHostEntry host;
-            host = Dns.GetHostEntry(Dns.GetHostName());
-            List<IPAddress> ret = host.AddressList.Where(ip => ip.AddressFamily == AddressFamily.InterNetwork).ToList();
-
-            return ret;
+            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
+            return host.AddressList.Where(ip => ip.AddressFamily == AddressFamily.InterNetwork).ToList();
         }
 
-        //Instantiate the HttpListener and add the localhost prefixes:
         private static HttpListener InitializeListener(List<IPAddress> localhostIPs)
         {
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost/");
+            listener.Prefixes.Add("http://localhost:8080/");
 
-            // Listen to IP address as well.
             localhostIPs.ForEach(ip =>
             {
-                Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + "/");
-                listener.Prefixes.Add("http://" + ip.ToString() + "/");
+                Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + ":8080/");
+                listener.Prefixes.Add("http://" + ip.ToString() + ":8080/");
             });
 
             return listener;
         }
 
-        public static int maxSimultaneousConnections = 20;
-        private static Semaphore sem = new Semaphore(maxSimultaneousConnections, maxSimultaneousConnections);
+        public static string GetWebsitePath()
+        {
+            string websitePath = Assembly.GetExecutingAssembly().Location;
+            websitePath = websitePath.LeftOfRightmostOf("\\").LeftOfRightmostOf("\\").LeftOfRightmostOf("\\") + "\\Website";
+            return websitePath;
+        }
 
-        /// <summary>
-        /// Begin listening to connections on a separate worker thread.
-        /// </summary>
+        public static void Start()
+        {
+            string websitePath = GetWebsitePath();
+            router.WebsitePath = websitePath;
+            List<IPAddress> localHostIPs = GetLocalHostIPs();
+            listener = InitializeListener(localHostIPs);
+            Start(listener);
+        }
+
         private static void Start(HttpListener listener)
         {
             listener.Start();
             Task.Run(() => RunServer(listener));
         }
 
-        /// <summary>
-        /// Start awaiting for connections, up to the "maxSimultaneousConnections" value.
-        /// This code runs in a separate thread.
-        /// </summary>
-        private static void RunServer(HttpListener listener)
+        private static async Task RunServer(HttpListener listener)
         {
             while (true)
             {
                 sem.WaitOne();
-                StartConnectionListener(listener);
+                await StartConnectionListener(listener);
             }
         }
 
-        /// <summary>
-        /// Await connections.
-        /// </summary>
-        private static async void StartConnectionListener(HttpListener listener)
+        private static async Task StartConnectionListener(HttpListener listener)
         {
-            // Wait for a connection. Return to caller while we wait.
             HttpListenerContext context = await listener.GetContextAsync();
-
-            // Release the semaphore so that another listener can be immediately started up.
             sem.Release();
+            Log(context.Request);
 
-            // We have a connection, do something...
-            string response = "Hello Browser!";
-            byte[] encoded = Encoding.UTF8.GetBytes(response);
-            context.Response.ContentLength64 = encoded.Length;
-            context.Response.OutputStream.Write(encoded, 0, encoded.Length);
-            context.Response.OutputStream.Close();
+            HttpListenerRequest request = context.Request;
+            string path = request.RawUrl.LeftOf("?");
+            string verb = request.HttpMethod;
+            string parms = request.RawUrl.RightOf("?");
+            Dictionary<string, string> kvParams = GetKeyValues(parms);
+
+            ResponsePacket resp = router.Route(verb, path, kvParams);
+            if (resp != null)
+            {
+                Respond(context.Response, resp);
+            }
+            else
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                context.Response.Close();
+            }
         }
 
-        /// <summary>
-        /// Starts the web server.
-        /// </summary>
-        public static void Start()
+        private static Dictionary<string, string> GetKeyValues(string parms)
         {
-            List<IPAddress> localHostIPs = GetLocalHostIPs();
-            HttpListener listener = InitializeListener(localHostIPs);
-            Start(listener);
+            var kvParams = new Dictionary<string, string>();
+            if (!string.IsNullOrEmpty(parms))
+            {
+                foreach (var pair in parms.Split('&'))
+                {
+                    var keyValue = pair.Split('=');
+                    if (keyValue.Length == 2)
+                        kvParams[keyValue[0]] = keyValue[1];
+                }
+            }
+            return kvParams;
         }
 
+        public static void Log(HttpListenerRequest request)
+        {
+            Console.WriteLine($"{request.RemoteEndPoint} {request.HttpMethod} {request.Url.AbsolutePath}");
+        }
+
+        private static void Respond(HttpListenerResponse response, ResponsePacket resp)
+        {
+            response.ContentType = resp.ContentType;
+            response.ContentLength64 = resp.Data.Length;
+            response.OutputStream.Write(resp.Data, 0, resp.Data.Length);
+            response.ContentEncoding = resp.Encoding;
+            response.StatusCode = (int)HttpStatusCode.OK;
+            response.OutputStream.Close();
+        }
     }
 }

@@ -7,8 +7,35 @@
       "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\webserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\webserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserverapp\\webserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:webserverapp\\webserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:webserverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3D1067-2A69-48F7-AA88-8A0EDCA2BA7D}|CSS{2A3D1067-2A69-48F7-AA88-8A0EDCA2BA7D}|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Demo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2A3D1067-2A69-48F7-AA88-8A0EDCA2BA7D}|CSS{2A3D1067-2A69-48F7-AA88-8A0EDCA2BA7D}|solutionrelative:Demo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BCAFB-B82C-4348-BCE2-F75CBEFF0FF5}|Pages{440BCAFB-B82C-4348-BCE2-F75CBEFF0FF5}|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{440BCAFB-B82C-4348-BCE2-F75CBEFF0FF5}|Pages{440BCAFB-B82C-4348-BCE2-F75CBEFF0FF5}|solutionrelative:Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 338,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,16 +61,75 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WebServerApp.csproj",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj",
+              "RelativeDocumentMoniker": "WebServerApp\\WebServerApp.csproj",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj",
+              "RelativeToolTip": "WebServerApp\\WebServerApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T17:09:39.19Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
-              "RelativeDocumentMoniker": "WebServerApp\\Program.cs",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
-              "RelativeToolTip": "WebServerApp\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA0AAAAbAAAAAAAAAA==",
+              "Title": "WebServer.csproj",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\WebServer.csproj",
+              "RelativeDocumentMoniker": "WebServer\\WebServer.csproj",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\WebServer.csproj",
+              "RelativeToolTip": "WebServer\\WebServer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T15:21:38.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Router.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs",
+              "RelativeDocumentMoniker": "WebServer\\Router.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs",
+              "RelativeToolTip": "WebServer\\Router.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:00:54.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T15:31:20.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs",
+              "RelativeDocumentMoniker": "WebServer\\Extensions.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs",
+              "RelativeToolTip": "WebServer\\Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T15:22:19.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Demo.css",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Demo.css",
+              "RelativeDocumentMoniker": "Demo.css",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Demo.css",
+              "RelativeToolTip": "Demo.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-15T15:15:26.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Index.html",
+              "RelativeDocumentMoniker": "Index.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Index.html",
+              "RelativeToolTip": "Index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-15T15:14:18.881Z"
             },
             {
               "$type": "Document",
@@ -53,10 +139,34 @@
               "RelativeDocumentMoniker": "WebServer\\Server.cs",
               "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Server.cs",
               "RelativeToolTip": "WebServer\\Server.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAQwDwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAzwDkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T07:46:28.829Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwL0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-15T17:14:36.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
+              "RelativeDocumentMoniker": "WebServerApp\\Program.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
+              "RelativeToolTip": "WebServerApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:00:54.958Z"
             }
           ]
         }

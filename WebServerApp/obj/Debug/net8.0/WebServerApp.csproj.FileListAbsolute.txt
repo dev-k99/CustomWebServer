@@ -16,3 +16,4 @@ C:\Users\kwanele\Documents\CustomWebServer\WebServerApp\obj\Debug\net8.0\refint\
 C:\Users\kwanele\Documents\CustomWebServer\WebServerApp\obj\Debug\net8.0\WebServerApp.pdb
 C:\Users\kwanele\Documents\CustomWebServer\WebServerApp\obj\Debug\net8.0\WebServerApp.genruntimeconfig.cache
 C:\Users\kwanele\Documents\CustomWebServer\WebServerApp\obj\Debug\net8.0\ref\WebServerApp.dll
+C:\Users\kwanele\Documents\CustomWebServer\WebServerApp\obj\Debug\net8.0\WebServerApp.sourcelink.json
