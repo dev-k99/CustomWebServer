@@ -1,0 +1,11 @@
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\bin\Debug\net8.0\WebServer.deps.json
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\bin\Debug\net8.0\WebServer.dll
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\bin\Debug\net8.0\WebServer.pdb
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\WebServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\WebServer.AssemblyInfoInputs.cache
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\WebServer.AssemblyInfo.cs
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\WebServer.csproj.CoreCompileInputs.cache
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\WebServer.dll
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\refint\WebServer.dll
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\WebServer.pdb
+C:\Users\kwanele\Documents\CustomWebServer\WebServer\obj\Debug\net8.0\ref\WebServer.dll
