@@ -10,7 +10,7 @@ namespace WebServer
     {
         public string WebsitePath { get; set; }
         private readonly Dictionary<string, ExtensionInfo> extFolderMap;
-        private readonly List<Route> routes = new List<Route>(); // Route table
+        private readonly List<Route> routes = new List<Route>();
 
         public Router()
         {
@@ -33,7 +33,7 @@ namespace WebServer
             routes.Add(route);
         }
 
-        public ResponsePacket Route(string verb, string path, Dictionary<string, string> kvParams)
+        public ResponsePacket Route(Session session, string verb, string path, Dictionary<string, string> kvParams)
         {
             string ext = path.RightOf(".");
             ResponsePacket ret = null;
@@ -48,7 +48,7 @@ namespace WebServer
 
                 if (route != null)
                 {
-                    string redirect = route.Action(kvParams);
+                    string redirect = route.Handler.Handle(session, kvParams);
                     if (string.IsNullOrEmpty(redirect))
                     {
                         ret = extInfo.Loader(fullPath, ext, extInfo);
@@ -104,7 +104,7 @@ namespace WebServer
             {
                 if (fullPath == WebsitePath)
                 {
-                    return Route("GET", "/index.html", null);
+                    return Route(null, "GET", "/index.html", null);
                 }
 
                 if (string.IsNullOrEmpty(ext))

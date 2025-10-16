@@ -12,11 +12,20 @@ namespace WebServerApp
         static void Main(string[] args)
         {
             Server.onError = Server.ErrorHandler;
-            Server.AddRoute(new Route { Verb = Server.POST, Path = "/demo/redirect", Action = RedirectMe });
+            Server.onRequest = (session, context) =>
+            {
+                session.Authorized = true; // Spoof authentication for testing
+                session.UpdateLastConnectionTime();
+            };
+
+            Server.AddRoute(new Route { Verb = Server.POST, Path = "/demo/redirect", Handler = new AnonymousRouteHandler(RedirectMe) });
+            Server.AddRoute(new Route { Verb = Server.POST, Path = "/demo/auth", Handler = new AuthenticatedRouteHandler(RedirectMe) });
+            Server.AddRoute(new Route { Verb = Server.POST, Path = "/demo/auth-exp", Handler = new AuthenticatedExpirableRouteHandler(RedirectMe) });
+
             Server.Start();
         }
 
-        public static string RedirectMe(Dictionary<string, string> parms)
+        public static string RedirectMe(Session session, Dictionary<string, string> parms)
         {
             return "/demo/clicked";
         }

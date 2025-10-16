@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,10 +14,13 @@ namespace WebServer
     {
         private static HttpListener listener;
         private static Router router = new Router();
+        private static SessionManager sessionManager = new SessionManager();
         public static int maxSimultaneousConnections = 20;
+        public static int expirationTimeSeconds = 60; // Session expires after 60 seconds
         private static Semaphore sem = new Semaphore(maxSimultaneousConnections, maxSimultaneousConnections);
         public static Func<ServerError, string> onError;
-        public const string POST = "post"; // Add POST constant
+        public static Action<Session, HttpListenerContext> onRequest;
+        public const string POST = "post";
 
         private static List<IPAddress> GetLocalHostIPs()
         {
@@ -29,12 +31,12 @@ namespace WebServer
         private static HttpListener InitializeListener(List<IPAddress> localhostIPs)
         {
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:8080/");
+            listener.Prefixes.Add("http://localhost:8081/");
 
             localhostIPs.ForEach(ip =>
             {
-                Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + ":8080/");
-                listener.Prefixes.Add("http://" + ip.ToString() + ":8080/");
+                Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + ":8081/");
+                listener.Prefixes.Add("http://" + ip.ToString() + ":8081/");
             });
 
             return listener;
@@ -85,6 +87,9 @@ namespace WebServer
                 sem.Release();
                 Log(context.Request);
 
+                Session session = sessionManager.GetSession(context.Request.RemoteEndPoint);
+                onRequest?.Invoke(session, context);
+
                 HttpListenerRequest request = context.Request;
                 string path = request.RawUrl.LeftOf("?");
                 string verb = request.HttpMethod;
@@ -95,13 +100,14 @@ namespace WebServer
                 Log(kvParams);
 
                 Console.WriteLine($"Routing: {verb} {path} with params {parms}");
-                resp = router.Route(verb, path, kvParams);
+                resp = router.Route(session, verb, path, kvParams);
 
                 if (resp != null && resp.Error != ServerError.OK)
                 {
                     resp.Redirect = onError?.Invoke(resp.Error);
                 }
 
+                session.UpdateLastConnectionTime();
                 Respond(context.Request, context.Response, resp);
             }
             catch (Exception ex)

@@ -13,11 +13,18 @@ namespace WebServer
         ServerError,
         UnknownType
     }
+    //public class Route
+    //{
+    //    public string Verb { get; set; }
+    //    public string Path { get; set; }
+    //    public Func<Dictionary<string, string>, string> Action { get; set; }
+    //}
+
     public class Route
     {
         public string Verb { get; set; }
         public string Path { get; set; }
-        public Func<Dictionary<string, string>, string> Action { get; set; }
+        public RouteHandler Handler { get; set; } // Updated to use RouteHandler
     }
     public class ResponsePacket
     {
