@@ -10,5 +10,8 @@
   <ItemGroup>
     <ProjectReference Include="..\WebServer\WebServer.csproj" />
   </ItemGroup>
+	<ItemGroup>
+		<None Include="..\Website\**" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
 
 </Project>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace WebServer
@@ -8,8 +9,8 @@ namespace WebServer
     public class Router
     {
         public string WebsitePath { get; set; }
-
         private readonly Dictionary<string, ExtensionInfo> extFolderMap;
+        private readonly List<Route> routes = new List<Route>(); // Route table
 
         public Router()
         {
@@ -27,15 +28,44 @@ namespace WebServer
             };
         }
 
+        public void AddRoute(Route route)
+        {
+            routes.Add(route);
+        }
+
         public ResponsePacket Route(string verb, string path, Dictionary<string, string> kvParams)
         {
             string ext = path.RightOf(".");
             ResponsePacket ret = null;
+            verb = verb.ToLower();
 
             if (extFolderMap.TryGetValue(ext, out var extInfo))
             {
-                string fullPath = Path.Combine(WebsitePath, path.TrimStart('/').Replace("/", "\\"));
-                ret = extInfo.Loader(fullPath, ext, extInfo);
+                string wpath = path.Substring(1).Replace('/', '\\');
+                string fullPath = Path.Combine(WebsitePath, wpath);
+
+                Route route = routes.SingleOrDefault(r => verb == r.Verb.ToLower() && path == r.Path);
+
+                if (route != null)
+                {
+                    string redirect = route.Action(kvParams);
+                    if (string.IsNullOrEmpty(redirect))
+                    {
+                        ret = extInfo.Loader(fullPath, ext, extInfo);
+                    }
+                    else
+                    {
+                        ret = new ResponsePacket { Redirect = redirect, Error = ServerError.OK };
+                    }
+                }
+                else
+                {
+                    ret = extInfo.Loader(fullPath, ext, extInfo);
+                }
+            }
+            else
+            {
+                ret = new ResponsePacket { Error = ServerError.UnknownType };
             }
 
             return ret;
@@ -47,11 +77,11 @@ namespace WebServer
             {
                 using var fStream = new FileStream(fullPath, FileMode.Open, FileAccess.Read);
                 using var br = new BinaryReader(fStream);
-                return new ResponsePacket { Data = br.ReadBytes((int)fStream.Length), ContentType = extInfo.ContentType };
+                return new ResponsePacket { Data = br.ReadBytes((int)fStream.Length), ContentType = extInfo.ContentType, Error = ServerError.OK };
             }
             catch
             {
-                return null; // Will be handled as 404 later
+                return new ResponsePacket { Error = ServerError.FileNotFound };
             }
         }
 
@@ -60,29 +90,35 @@ namespace WebServer
             try
             {
                 string text = File.ReadAllText(fullPath);
-                return new ResponsePacket { Data = Encoding.UTF8.GetBytes(text), ContentType = extInfo.ContentType, Encoding = Encoding.UTF8 };
+                return new ResponsePacket { Data = Encoding.UTF8.GetBytes(text), ContentType = extInfo.ContentType, Encoding = Encoding.UTF8, Error = ServerError.OK };
             }
             catch
             {
-                return null; // Will be handled as 404 later
+                return new ResponsePacket { Error = ServerError.FileNotFound };
             }
         }
 
         private ResponsePacket PageLoader(string fullPath, string ext, ExtensionInfo extInfo)
         {
-            if (fullPath == WebsitePath) // Root request (e.g., foo.com)
+            try
             {
-                return Route("GET", "/index.html", null);
-            }
+                if (fullPath == WebsitePath)
+                {
+                    return Route("GET", "/index.html", null);
+                }
 
-            if (string.IsNullOrEmpty(ext))
+                if (string.IsNullOrEmpty(ext))
+                {
+                    fullPath += ".html";
+                }
+
+                fullPath = Path.Combine(WebsitePath, "Pages", fullPath.RightOf(WebsitePath).TrimStart('\\'));
+                return FileLoader(fullPath, ext, extInfo);
+            }
+            catch
             {
-                fullPath += ".html";
+                return new ResponsePacket { Error = ServerError.PageNotFound };
             }
-
-            // Inject "Pages" folder for HTML files
-            fullPath = Path.Combine(WebsitePath, "Pages", fullPath.RightOf(WebsitePath).TrimStart('\\'));
-            return FileLoader(fullPath, ext, extInfo);
         }
     }
 }

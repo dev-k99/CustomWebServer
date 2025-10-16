@@ -1,9 +1,38 @@
 ﻿using System;
-using System.Linq;
 using System.Text;
 
 namespace WebServer
 {
+    public enum ServerError
+    {
+        OK,
+        ExpiredSession,
+        NotAuthorized,
+        FileNotFound,
+        PageNotFound,
+        ServerError,
+        UnknownType
+    }
+    public class Route
+    {
+        public string Verb { get; set; }
+        public string Path { get; set; }
+        public Func<Dictionary<string, string>, string> Action { get; set; }
+    }
+    public class ResponsePacket
+    {
+        public string Redirect { get; set; }
+        public byte[] Data { get; set; }
+        public string ContentType { get; set; }
+        public Encoding Encoding { get; set; }
+    }
+
+    internal class ExtensionInfo
+    {
+        public string ContentType { get; set; }
+        public Func<string, string, ExtensionInfo, ResponsePacket> Loader { get; set; }
+    }
+
     public static class StringExtensions
     {
         public static string LeftOf(this string input, string delimiter)
@@ -29,19 +58,5 @@ namespace WebServer
             int index = input.LastIndexOf(delimiter);
             return index == -1 ? input : input.Substring(0, index);
         }
-    }
-
-    public class ResponsePacket
-    {
-        public string Redirect { get; set; }
-        public byte[] Data { get; set; }
-        public string ContentType { get; set; }
-        public Encoding Encoding { get; set; }
-    }
-
-    internal class ExtensionInfo
-    {
-        public string ContentType { get; set; }
-        public Func<string, string, ExtensionInfo, ResponsePacket> Loader { get; set; }
     }
 }
