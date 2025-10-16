@@ -11,6 +11,8 @@ namespace WebServer
         public string WebsitePath { get; set; }
         private readonly Dictionary<string, ExtensionInfo> extFolderMap;
         private readonly List<Route> routes = new List<Route>();
+        public const string GET = "get";
+        public const string PUT = "put";
 
         public Router()
         {
@@ -39,6 +41,14 @@ namespace WebServer
             ResponsePacket ret = null;
             verb = verb.ToLower();
 
+            if (verb != GET)
+            {
+                if (!VerifyCSRF(session, kvParams))
+                {
+                    return Server.Redirect(Server.onError(ServerError.ValidationError));
+                }
+            }
+
             if (extFolderMap.TryGetValue(ext, out var extInfo))
             {
                 string wpath = path.Substring(1).Replace('/', '\\');
@@ -48,14 +58,14 @@ namespace WebServer
 
                 if (route != null)
                 {
-                    string redirect = route.Handler.Handle(session, kvParams);
-                    if (string.IsNullOrEmpty(redirect))
+                    ResponsePacket handlerResponse = route.Handler.Handle(session, kvParams);
+                    if (handlerResponse == null)
                     {
                         ret = extInfo.Loader(fullPath, ext, extInfo);
                     }
                     else
                     {
-                        ret = new ResponsePacket { Redirect = redirect, Error = ServerError.OK };
+                        ret = handlerResponse;
                     }
                 }
                 else
@@ -68,6 +78,20 @@ namespace WebServer
                 ret = new ResponsePacket { Error = ServerError.UnknownType };
             }
 
+            return ret;
+        }
+
+        private bool VerifyCSRF(Session session, Dictionary<string, string> kvParams)
+        {
+            bool ret = true;
+            if (kvParams.TryGetValue(Server.validationTokenName, out string token))
+            {
+                ret = session.Objects.TryGetValue(Server.validationTokenName, out string sessionToken) && sessionToken == token;
+            }
+            else
+            {
+                Console.WriteLine("Warning - CSRF token is missing. Consider adding it to the request.");
+            }
             return ret;
         }
 
@@ -113,7 +137,9 @@ namespace WebServer
                 }
 
                 fullPath = Path.Combine(WebsitePath, "Pages", fullPath.RightOf(WebsitePath).TrimStart('\\'));
-                return FileLoader(fullPath, ext, extInfo);
+                string text = File.ReadAllText(fullPath);
+                text = Server.postProcess?.Invoke(null, text) ?? text; // Apply CSRF token
+                return new ResponsePacket { Data = Encoding.UTF8.GetBytes(text), ContentType = extInfo.ContentType, Encoding = Encoding.UTF8, Error = ServerError.OK };
             }
             catch
             {

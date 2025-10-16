@@ -3,79 +3,79 @@
   "WorkspaceRootPath": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\unkwownType.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\ErrorPages\\unkwownType.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\webserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\webserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\serverError.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\ErrorPages\\serverError.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:webserverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\pageNotFound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\ErrorPages\\pageNotFound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\notAuthorized.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\ErrorPages\\notAuthorized.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\expiredSession.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\ErrorPages\\expiredSession.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebServerApp\\WebServerApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\routehandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\routehandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebServerApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\clicked.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\Pages\\demo\\clicked.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\redirect.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\Pages\\demo\\redirect.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebServer\\Server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebServer\\Router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebServer\\Extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserver\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E6A81C3-0E83-4D3E-92C1-293B49EF7D25}|WebServer\\WebServer.csproj|solutionrelative:webserver\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\ReadME.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ReadME.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\fileNotFound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\ErrorPages\\fileNotFound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Website\\Pages\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\WebServer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebServer\\WebServer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\errorpages\\unkwowntype.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\errorpages\\unkwowntype.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Demo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\errorpages\\servererror.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\errorpages\\servererror.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kwanele\\Documents\\CustomWebServer\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\errorpages\\pagenotfound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\errorpages\\pagenotfound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\errorpages\\notauthorized.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\errorpages\\notauthorized.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\errorpages\\expiredsession.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\errorpages\\expiredsession.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\pages\\demo\\clicked.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\pages\\demo\\clicked.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\pages\\demo\\redirect.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\pages\\demo\\redirect.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\webserverapp\\webserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:webserverapp\\webserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\errorpages\\filenotfound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\errorpages\\filenotfound.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|c:\\users\\kwanele\\documents\\customwebserver\\website\\pages\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7471F460-F83E-4A60-AAF9-1F9D002F396E}|WebServerApp\\WebServerApp.csproj|solutionrelative:website\\pages\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,7 +85,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 338,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,33 +101,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "unkwownType.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\unkwownType.html",
-              "RelativeDocumentMoniker": "Website\\ErrorPages\\unkwownType.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\unkwownType.html",
-              "RelativeToolTip": "Website\\ErrorPages\\unkwownType.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T11:01:56.969Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Server.cs",
+              "RelativeDocumentMoniker": "WebServer\\Server.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Server.cs",
+              "RelativeToolTip": "WebServer\\Server.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T07:46:28.829Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "serverError.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\serverError.html",
-              "RelativeDocumentMoniker": "Website\\ErrorPages\\serverError.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\serverError.html",
-              "RelativeToolTip": "Website\\ErrorPages\\serverError.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T11:01:17.914Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
+              "RelativeDocumentMoniker": "WebServerApp\\Program.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
+              "RelativeToolTip": "WebServerApp\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:00:54.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "pageNotFound.html",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\pageNotFound.html",
               "RelativeDocumentMoniker": "Website\\ErrorPages\\pageNotFound.html",
@@ -135,116 +134,35 @@
               "RelativeToolTip": "Website\\ErrorPages\\pageNotFound.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T11:00:43.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "notAuthorized.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\notAuthorized.html",
-              "RelativeDocumentMoniker": "Website\\ErrorPages\\notAuthorized.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\notAuthorized.html",
-              "RelativeToolTip": "Website\\ErrorPages\\notAuthorized.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T11:00:09.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "expiredSession.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\expiredSession.html",
-              "RelativeDocumentMoniker": "Website\\ErrorPages\\expiredSession.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\expiredSession.html",
-              "RelativeToolTip": "Website\\ErrorPages\\expiredSession.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T10:59:20.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "clicked.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\clicked.html",
-              "RelativeDocumentMoniker": "Website\\Pages\\demo\\clicked.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\clicked.html",
-              "RelativeToolTip": "Website\\Pages\\demo\\clicked.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T10:55:17.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "redirect.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\redirect.html",
-              "RelativeDocumentMoniker": "Website\\Pages\\demo\\redirect.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\redirect.html",
-              "RelativeToolTip": "Website\\Pages\\demo\\redirect.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T10:54:41.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReadME.md",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\ReadME.md",
-              "RelativeDocumentMoniker": "ReadME.md",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\ReadME.md",
-              "RelativeToolTip": "ReadME.md",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-10-16T10:47:15.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Server.cs",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Server.cs",
-              "RelativeDocumentMoniker": "WebServer\\Server.cs",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Server.cs",
-              "RelativeToolTip": "WebServer\\Server.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAiwMsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T07:46:28.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T11:00:43.142Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
-              "RelativeDocumentMoniker": "WebServerApp\\Program.cs",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\Program.cs",
-              "RelativeToolTip": "WebServerApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Session.cs",
+              "RelativeDocumentMoniker": "WebServer\\Session.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Session.cs",
+              "RelativeToolTip": "WebServer\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:00:54.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T16:04:18.586Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "WebServerApp.csproj",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj",
-              "RelativeDocumentMoniker": "WebServerApp\\WebServerApp.csproj",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj",
-              "RelativeToolTip": "WebServerApp\\WebServerApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-15T17:09:39.19Z",
-              "EditorCaption": ""
+              "Title": "RouteHandlers.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\RouteHandlers.cs",
+              "RelativeDocumentMoniker": "WebServer\\RouteHandlers.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\RouteHandlers.cs",
+              "RelativeToolTip": "WebServer\\RouteHandlers.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA8wDcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T16:05:56.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "WebServer.csproj",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\WebServer.csproj",
               "RelativeDocumentMoniker": "WebServer\\WebServer.csproj",
@@ -257,7 +175,127 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Router.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs",
+              "RelativeDocumentMoniker": "WebServer\\Router.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs",
+              "RelativeToolTip": "WebServer\\Router.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T15:31:20.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs",
+              "RelativeDocumentMoniker": "WebServer\\Extensions.cs",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs",
+              "RelativeToolTip": "WebServer\\Extensions.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T15:22:19.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "serverError.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\serverError.html",
+              "RelativeDocumentMoniker": "Website\\ErrorPages\\serverError.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\serverError.html",
+              "RelativeToolTip": "Website\\ErrorPages\\serverError.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-16T11:01:17.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "unkwownType.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\unkwownType.html",
+              "RelativeDocumentMoniker": "Website\\ErrorPages\\unkwownType.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\unkwownType.html",
+              "RelativeToolTip": "Website\\ErrorPages\\unkwownType.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-16T11:01:56.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "notAuthorized.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\notAuthorized.html",
+              "RelativeDocumentMoniker": "Website\\ErrorPages\\notAuthorized.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\notAuthorized.html",
+              "RelativeToolTip": "Website\\ErrorPages\\notAuthorized.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-16T11:00:09.57Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "expiredSession.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\expiredSession.html",
+              "RelativeDocumentMoniker": "Website\\ErrorPages\\expiredSession.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\expiredSession.html",
+              "RelativeToolTip": "Website\\ErrorPages\\expiredSession.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-16T10:59:20.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "clicked.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\clicked.html",
+              "RelativeDocumentMoniker": "Website\\Pages\\demo\\clicked.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\clicked.html",
+              "RelativeToolTip": "Website\\Pages\\demo\\clicked.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-16T10:55:17.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "redirect.html",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\redirect.html",
+              "RelativeDocumentMoniker": "Website\\Pages\\demo\\redirect.html",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\demo\\redirect.html",
+              "RelativeToolTip": "Website\\Pages\\demo\\redirect.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-16T10:54:41.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReadME.md",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\ReadME.md",
+              "RelativeDocumentMoniker": "ReadME.md",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\ReadME.md",
+              "RelativeToolTip": "ReadME.md",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-16T10:47:15.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WebServerApp.csproj",
+              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj",
+              "RelativeDocumentMoniker": "WebServerApp\\WebServerApp.csproj",
+              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServerApp\\WebServerApp.csproj",
+              "RelativeToolTip": "WebServerApp\\WebServerApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T17:09:39.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "fileNotFound.html",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\ErrorPages\\fileNotFound.html",
               "RelativeDocumentMoniker": "Website\\ErrorPages\\fileNotFound.html",
@@ -265,49 +303,11 @@
               "RelativeToolTip": "Website\\ErrorPages\\fileNotFound.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T10:43:43.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T10:43:43.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Router.cs",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs",
-              "RelativeDocumentMoniker": "WebServer\\Router.cs",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Router.cs",
-              "RelativeToolTip": "WebServer\\Router.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAiwHsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:31:20.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs",
-              "RelativeDocumentMoniker": "WebServer\\Extensions.cs",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\WebServer\\Extensions.cs",
-              "RelativeToolTip": "WebServer\\Extensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:22:19.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Demo.css",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Demo.css",
-              "RelativeDocumentMoniker": "Demo.css",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Demo.css",
-              "RelativeToolTip": "Demo.css",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-15T15:15:26.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Index.html",
               "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Website\\Pages\\Index.html",
               "RelativeDocumentMoniker": "Website\\Pages\\Index.html",
@@ -315,23 +315,11 @@
               "RelativeToolTip": "Website\\Pages\\Index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-16T10:19:57.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T10:19:57.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.html",
-              "DocumentMoniker": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Index.html",
-              "RelativeDocumentMoniker": "Index.html",
-              "ToolTip": "C:\\Users\\kwanele\\Documents\\CustomWebServer\\Index.html",
-              "RelativeToolTip": "Index.html",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-15T15:14:18.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
@@ -339,8 +327,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "ViewState": "AgIAAKIAAAAAAAAAAAAiwL0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-10-15T17:14:36.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T17:14:36.421Z"
             }
           ]
         }

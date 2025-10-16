@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,10 +15,14 @@ namespace WebServer
         private static Router router = new Router();
         private static SessionManager sessionManager = new SessionManager();
         public static int maxSimultaneousConnections = 20;
-        public static int expirationTimeSeconds = 60; // Session expires after 60 seconds
+        public static int expirationTimeSeconds = 60;
+        public static string publicIP = null; // Set to domain or public IP
         private static Semaphore sem = new Semaphore(maxSimultaneousConnections, maxSimultaneousConnections);
         public static Func<ServerError, string> onError;
         public static Action<Session, HttpListenerContext> onRequest;
+        public static Func<Session, string, string> postProcess;
+        public static string validationTokenScript = "<%AntiForgeryToken%>";
+        public static string validationTokenName = "__CSRFToken__";
         public const string POST = "post";
 
         private static List<IPAddress> GetLocalHostIPs()
@@ -31,12 +34,12 @@ namespace WebServer
         private static HttpListener InitializeListener(List<IPAddress> localhostIPs)
         {
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:8081/");
+            listener.Prefixes.Add("http://localhost:8080/");
 
             localhostIPs.ForEach(ip =>
             {
-                Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + ":8081/");
-                listener.Prefixes.Add("http://" + ip.ToString() + ":8081/");
+                Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + ":8080/");
+                listener.Prefixes.Add("http://" + ip.ToString() + ":8080/");
             });
 
             return listener;
@@ -160,7 +163,7 @@ namespace WebServer
             if (!string.IsNullOrEmpty(resp.Redirect))
             {
                 response.StatusCode = (int)HttpStatusCode.Redirect;
-                response.Redirect("http://" + request.UserHostAddress + resp.Redirect);
+                response.Redirect("http://" + (string.IsNullOrEmpty(publicIP) ? request.UserHostAddress : publicIP) + resp.Redirect);
             }
             else
             {
@@ -173,6 +176,11 @@ namespace WebServer
             }
 
             response.OutputStream.Close();
+        }
+
+        public static ResponsePacket Redirect(string path)
+        {
+            return new ResponsePacket { Redirect = path, Error = ServerError.OK };
         }
 
         public static string ErrorHandler(ServerError error)
@@ -198,6 +206,9 @@ namespace WebServer
                 case ServerError.UnknownType:
                     ret = "/ErrorPages/unknownType.html";
                     break;
+                case ServerError.ValidationError:
+                    ret = "/ErrorPages/validationError.html";
+                    break;
             }
             return ret;
         }
@@ -205,6 +216,15 @@ namespace WebServer
         public static void AddRoute(Route route)
         {
             router.AddRoute(route);
+        }
+
+        public static string DefaultPostProcess(Session session, string html)
+        {
+            if (session == null || !session.Objects.TryGetValue(validationTokenName, out string token))
+            {
+                return html;
+            }
+            return html.Replace(validationTokenScript, $"<input name='{validationTokenName}' type='hidden' value='{token}' id='__csrf__'/>");
         }
     }
 }

@@ -9,19 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServerApp", "WebServerAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{440BCAFB-B82C-4348-BCE2-F75CBEFF0FF5}"
-	ProjectSection(SolutionItems) = preProject
-		Index.html = Index.html
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{2A3D1067-2A69-48F7-AA88-8A0EDCA2BA7D}"
-	ProjectSection(SolutionItems) = preProject
-		Demo.css = Demo.css
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4BC24406-731E-42C6-A8F2-D9348261A970}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{8D78FA8E-DA5A-4C78-9BC2-97545A360DC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{440BCAFB-B82C-4348-BCE2-F75CBEFF0FF5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{2A3D1067-2A69-48F7-AA88-8A0EDCA2BA7D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{4BC24406-731E-42C6-A8F2-D9348261A970} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{8D78FA8E-DA5A-4C78-9BC2-97545A360DC8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB472C19-37E3-4785-AFF9-BF630F5F7F8E}

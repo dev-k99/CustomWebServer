@@ -5,24 +5,24 @@ namespace WebServer
 {
     public abstract class RouteHandler
     {
-        protected Func<Session, Dictionary<string, string>, string> handler;
+        protected Func<Session, Dictionary<string, string>, ResponsePacket> handler;
 
-        public RouteHandler(Func<Session, Dictionary<string, string>, string> handler)
+        public RouteHandler(Func<Session, Dictionary<string, string>, ResponsePacket> handler)
         {
             this.handler = handler;
         }
 
-        public abstract string Handle(Session session, Dictionary<string, string> parms);
+        public abstract ResponsePacket Handle(Session session, Dictionary<string, string> parms);
     }
 
     public class AnonymousRouteHandler : RouteHandler
     {
-        public AnonymousRouteHandler(Func<Session, Dictionary<string, string>, string> handler)
+        public AnonymousRouteHandler(Func<Session, Dictionary<string, string>, ResponsePacket> handler)
             : base(handler)
         {
         }
 
-        public override string Handle(Session session, Dictionary<string, string> parms)
+        public override ResponsePacket Handle(Session session, Dictionary<string, string> parms)
         {
             return handler(session, parms);
         }
@@ -30,30 +30,30 @@ namespace WebServer
 
     public class AuthenticatedRouteHandler : RouteHandler
     {
-        public AuthenticatedRouteHandler(Func<Session, Dictionary<string, string>, string> handler)
+        public AuthenticatedRouteHandler(Func<Session, Dictionary<string, string>, ResponsePacket> handler)
             : base(handler)
         {
         }
 
-        public override string Handle(Session session, Dictionary<string, string> parms)
+        public override ResponsePacket Handle(Session session, Dictionary<string, string> parms)
         {
-            return session.Authorized ? handler(session, parms) : Server.onError(ServerError.NotAuthorized);
+            return session.Authorized ? handler(session, parms) : Server.Redirect(Server.onError(ServerError.NotAuthorized));
         }
     }
 
     public class AuthenticatedExpirableRouteHandler : AuthenticatedRouteHandler
     {
-        public AuthenticatedExpirableRouteHandler(Func<Session, Dictionary<string, string>, string> handler)
+        public AuthenticatedExpirableRouteHandler(Func<Session, Dictionary<string, string>, ResponsePacket> handler)
             : base(handler)
         {
         }
 
-        public override string Handle(Session session, Dictionary<string, string> parms)
+        public override ResponsePacket Handle(Session session, Dictionary<string, string> parms)
         {
             if (session.IsExpired(Server.expirationTimeSeconds))
             {
                 session.Authorized = false;
-                return Server.onError(ServerError.ExpiredSession);
+                return Server.Redirect(Server.onError(ServerError.ExpiredSession));
             }
             return base.Handle(session, parms);
         }

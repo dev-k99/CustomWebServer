@@ -13,6 +13,7 @@ namespace WebServer
         public Session()
         {
             Objects = new Dictionary<string, string>();
+            Objects[Server.validationTokenName] = Guid.NewGuid().ToString();
             UpdateLastConnectionTime();
         }
 
